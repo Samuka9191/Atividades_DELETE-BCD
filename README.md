@@ -5,6 +5,10 @@ Utilizar o comando DELETE para excluir registros de tabelas de um banco de dados
 
 Atenção: algumas exclusões podem falhar devido a restrições de chave estrangeira (FOREIGN KEY), caso existam registros relacionados em outras tabelas.
 
+Use esse comando antes de executar os codigos, mas varia de tabela e credenciais.
+ALTER TABLE cliente
+DROP INDEX id_cliente;
+
 1. Excluir cliente pelo ID
 ````
 DELETE FROM cliente
