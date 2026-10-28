@@ -58,16 +58,6 @@ WHERE status_venda = 'Cancelada';
 
 Exclui todas as vendas cujo status seja Cancelada.
 
-Cuidados importantes
-Execute um SELECT com a mesma condição antes de cada DELETE para conferir os registros que serão excluídos.
-O comando DELETE sem WHERE exclui todos os registros da tabela.
-Uma chave primária (PRIMARY KEY) ou única (UNIQUE) não impede, por si só, a exclusão de um registro.
-Uma chave estrangeira (FOREIGN KEY) em outra tabela pode impedir a exclusão quando existem registros relacionados.
-O comportamento depende das restrições configuradas, como RESTRICT, NO ACTION, CASCADE ou SET NULL.
-Exemplo de verificação antes da exclusão
-sql
-SELECT *
-FROM cliente
 WHERE id_cliente = 5;
 
 
